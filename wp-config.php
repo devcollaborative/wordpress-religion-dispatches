@@ -36,8 +36,8 @@ if (file_exists(dirname(__FILE__) . '/wp-config-pantheon.php') && isset($_ENV['P
 	define('DB_USER',          'database_username');
 	define('DB_PASSWORD',      'database_password');
 	define('DB_HOST',          'database_host');
-	define('DB_CHARSET',       'utf8');
-	define('DB_COLLATE',       '');
+	define('DB_CHARSET', 'utf8');
+	define('DB_COLLATE', 'utf8_unicode_ci');
 	define('AUTH_KEY',         'put your unique phrase here');
 	define('SECURE_AUTH_KEY',  'put your unique phrase here');
 	define('LOGGED_IN_KEY',    'put your unique phrase here');
@@ -72,6 +72,11 @@ $table_prefix = 'wp_';
 if ( ! defined( 'WP_DEBUG' ) ) {
 	define('WP_DEBUG', false);
 }
+
+define('WP_CACHE', true);
+define('DISALLOW_FILE_EDIT', false);
+define('DISALLOW_FILE_MODS', false);
+define('WPLANG', '');
 
 /* That's all, stop editing! Happy Pressing. */
 

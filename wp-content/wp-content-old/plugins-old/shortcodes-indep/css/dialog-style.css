@@ -1,0 +1,263 @@
+/* GLOBAL
+------------------------------------------------------- */
+
+#TB_window {
+	overflow:auto;
+}
+
+#TB_ajaxContent {
+	width:100%;
+}
+
+.shortcode-form{
+	padding: 40px;
+}
+
+.shortcode-form h2{
+	background: #F1F1F1;
+	background-image: -webkit-gradient(linear,left bottom,left top,from(#ECECEC),to(#F9F9F9));
+	background-image: -webkit-linear-gradient(bottom,#ECECEC,#F9F9F9);
+	background-image: -moz-linear-gradient(bottom,#ECECEC,#F9F9F9);
+	background-image: -o-linear-gradient(bottom,#ECECEC,#F9F9F9);
+	background-image: linear-gradient(to top,#ECECEC,#F9F9F9);
+	border-bottom: 1px solid #DFDFDF;
+	color: #464646;
+	margin: -40px -40px 20px;
+	padding: 20px 40px;
+}
+
+.shortcode-form input[type=text]{
+	padding:5px;
+	width:100%;	
+}
+
+.shortcode-form textarea{
+	height:70px;
+	width:100%;
+	overflow: auto;
+}
+
+.field-box {
+	background: #f7f7f7;
+	border: 1px solid #eee;
+	border-radius: 4px;
+	padding: 12px;
+	margin-bottom: 12px;
+}
+
+label{
+	color:#777;	
+}
+
+.item_title {
+	margin-bottom:5px;	
+}
+
+.controls {
+	position: relative;
+}	
+
+.shortcode-form .button {
+	height: 30px;
+	line-height: 28px;
+	padding: 0 11px 2px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.shortcode-form .controls .button {
+	position: absolute;
+	right: 0;
+}
+
+.shortcode-form .controls #btn-add{
+	right: 32px;	
+}
+
+.shortcode-form .button-primary {
+	color:#fff !important;
+	height: 30px;
+	line-height: 28px;
+	padding: 0 16px 2px;
+}
+
+.shortcode-form h3,
+.shortcode-form p {
+	font-family: Arial;
+	margin:0;
+	padding:0;
+	line-height:18px;
+}
+
+.shortcode-form h3 {
+	font-size: 18px;	
+}
+
+.shortcode-form p {
+	font-size:14px;	
+}
+
+
+
+/* -- Radio Inputs Styling
+-------------------------------------------------- */
+.shortcode-form .pallete input[type='radio'],
+.shortcode-form .columns input[type='radio'] {
+    opacity: 0;
+    float: left;
+    width: 18px;
+	cursor:pointer;
+} 
+
+/* -- Columns ----- */
+.columns input[type='radio'] + label {
+	width: 590px; 
+	height: 50px;
+    display: block;
+    cursor: pointer;
+	margin-bottom: 20px;
+	background: url('../images/cols.png') no-repeat;
+}
+
+.columns input[type='radio']:hover + label {
+	opacity: 0.7;
+	filter: alpha(opacity=0.7);
+}
+
+
+input[type='radio']#col1 + label 			{ background-position: 0 0; }
+input[type='radio']#col1:checked + label	{ background-position: 0 -50px; }
+
+input[type='radio']#col2 + label 			{ background-position: 0 -120px; }
+input[type='radio']#col2:checked + label	{ background-position: 0 -170px; }
+
+input[type='radio']#col3 + label 			{ background-position: 0 -240px; }
+input[type='radio']:checked#col3 + label	{ background-position: 0 -290px; }
+
+input[type='radio']#col4 + label			{ background-position: 0 -360px; }
+input[type='radio']#col4:checked + label	{ background-position: 0 -410px; }
+
+input[type='radio']#col5 + label			{ background-position: 0 -480px; }
+input[type='radio']#col5:checked + label	{ background-position: 0 -530px; }
+
+input[type='radio']:checked:hover + label {
+	opacity: 1;
+	filter: alpha(opacity=1);
+}
+
+.bg-redlight, #redlight + label			{ background-color: #d37a7a; }
+.bg-red, #red + label					{ background-color: #dc4133; }
+.bg-orangelight, #orangelight + label	{ background-color: #ffa800; }
+.bg-orange, #orange + label				{ background-color: #ff6600; }
+.bg-yellowlight, #yellowlight + label	{ background-color: #ebd590; }
+.bg-yellow, #yellow + label				{ background-color :#ffd202; }
+.bg-greenlight, #greenlight + label		{ background-color: #a5d592; }
+.bg-green, #green + label				{ background-color: #7cb764; }
+.bg-turquoise, #turquoise + label		{ background-color: #5ee8bf; }
+.bg-bluelight, #bluelight + label		{ background-color: #8fc1d1; }
+.bg-blue, #blue + label					{ background-color: #5496ab; }
+.bg-purplelight, #purplelight + label	{ background-color: #9e7fab; }
+.bg-purple, #purple + label				{ background-color: #572a6a; }
+.bg-brownlight, #brownlight + label		{ background-color: #d9ba8c; }
+.bg-brown, #brown + label				{ background-color: #d5a661; }
+.bg-gray, #gray + label					{ background-color: #bbb; }
+.bg-darkgray, #darkgray + label			{ background-color: #555; }
+.bg-black, #black + label				{ background-color: #000; }
+
+.color-black	{ color:#000 !important; }
+.color-white	{ color:#fff !important; }
+
+.pallete input[type='radio']:checked + label,
+.pallete input[type='radio']:checked:hover + label{
+	opacity: 1;
+	background-image:url('../images/radio_checked.png');
+	background-position: center center;
+}
+
+
+.pallete input[type='radio'] + label {
+	width:28px;
+	height:28px;
+	display:block;
+ 	margin:2px 3px 2px -18px;
+  	float:left;
+  	text-align:center;
+}
+
+
+.info-preview {
+	margin-bottom:20px;
+}
+
+.btn-preview{
+	margin:30px 0;
+}
+
+.sc-button {
+	font-size: 14px;
+	font-family: Arial;
+	font-weight: bold;
+	padding: 1.1em 1.4em;
+	line-height: 0.8em;
+	text-decoration: none;
+}
+
+
+/* Info Box
+-------------------------------------------------- */
+.sc-infobox {
+	padding: 12px;
+}
+
+.sc-infobox.opacity-on {
+	background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.8)), color-stop(100%,rgba(255,255,255,0.8)));
+	background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
+	background-image: -o-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
+	background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.08) 100%);
+	background-image: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14ffffff', endColorstr='#14ffffff',GradientType=0 );
+}
+
+.sc-infobox.content-white {
+	color: #fff;
+}
+	.sc-infobox.content-white .border {
+		border: 1px solid #fff;
+	}
+	.sc-infobox.content-white .sep{
+		background-color:#fff;
+	}
+
+.sc-infobox.content-black {
+	color: #000;
+}
+	.sc-infobox.content-black .border {
+		border: 1px solid #000;
+	}
+	.sc-infobox.content-black .sep{
+		background-color:#000;
+	}
+	
+.sc-infobox .border{
+	padding: 18px 12px;
+}
+
+.sc-infobox .border{
+	text-align:center;
+}
+
+.sc-infobox span:first-child{
+	font-size: 24px;
+}
+
+.sc-infobox span{
+	display: block;
+	font-size: 16px;
+}
+
+.sc-infobox .sep{
+	height: 1px;
+	margin: 18px auto 12px;
+	width:30%;
+}

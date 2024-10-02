@@ -1,0 +1,98 @@
+/*
+ Theme Name:   RELIGION DISPATCHES
+ Theme URI:    http://religiondispatches.org
+ Description:  Canvas Child Theme
+ Author:       The Self Agency
+ Author URI:   http://theselfagency.com
+ Template:     canvas
+ Version:      1.0.0
+ Text Domain:  canvas-child
+*/
+
+@import url("../canvas/style.css");
+
+/* =Theme customization starts here
+-------------------------------------------------------------- */
+
+#nav-search .icon-search {
+  top: 1px !important;
+}
+
+.searchform, #searchform {
+  margin-top: 4px !important;
+}
+
+.entry img, img.thumbnail {
+  background: none;
+  border: medium none;
+  padding: 5px;
+}
+
+.breadcrumb-title {
+  display: none;
+}
+
+.home .breadcrumb {
+  display: none;
+}
+
+.book_info {
+  border: 1px solid #cccccc;
+  padding: 20px;
+  float: right;
+  width: 200px;
+  margin: 0 0 20px 20px;
+}
+
+.book_info img {
+	width: 190px;
+}
+
+.embed_area {
+  margin: 0;
+  padding: 0;
+}
+
+.embed_area ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.embed_area iframe, .embed_area object {
+  width: 100% !important;
+}
+
+article h3 {
+  margin-bottom: 12px;
+}
+
+.source h4 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.source h3 {
+  margin-bottom: 30px;
+}
+
+.news_scroll a.post-title {
+  font-size: 14px;
+}
+
+.news_scroll a.post-title:hover {
+  text-decoration: none;
+}
+
+@media all and (min-width: 540px) {
+  .annen_logo {
+    float: right; 
+    margin-top: -50px;
+   }
+ }
+
+@media all and (max-width: 540px) {
+  .annen_logo {
+    float: right; 
+   }
+ }

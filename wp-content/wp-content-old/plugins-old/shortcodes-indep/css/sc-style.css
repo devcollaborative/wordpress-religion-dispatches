@@ -1,0 +1,411 @@
+/*
+ * Plugin: Shortcodes Indep
+ * Author: ThemesIndep
+ * Copyright: ThemesIndep, 2013
+ * License: GNU General Public License version 3.0
+ * License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+
+/* Accordion
+--------------------------------------------------- */
+.sc-accordion {
+	margin-bottom: 18px;	
+}
+
+.sc-accordion .trigger {
+	display: block;
+	color: #444;
+	display: block;
+	padding: 21px 0 18px 40px;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	font-size: 1em;
+	line-height: 1.5em;
+	text-decoration: none;
+	margin-top: -1px;
+	background:url('../images/trigger.png') no-repeat 0 21px;
+}
+
+.sc-accordion .trigger:hover {
+	color:#777;
+}
+
+.sc-accordion .trigger.active {
+	margin-top: -3px;
+	border-top: 3px solid #000;
+	background:url('../images/trigger.png') no-repeat 0 -57px;
+}
+
+.sc-accordion .trigger.active:hover {
+	color: #000;
+}
+
+.sc-accordion .content {
+	display: none;
+	color: #555;
+	overflow: hidden;
+	padding: 18px 0 21px 40px;
+	border-bottom: 1px solid #000;
+	border-top: 0;
+}
+
+
+
+/* Buttons
+--------------------------------------------------- */
+.sc-button {
+	font-size: 14px;
+	display: inline-block;
+	text-decoration: none;
+	margin-bottom: 4px;
+	transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+
+.sc-button span{
+	display: block;
+	padding: 1.2em 1.5em;
+	line-height: 0.9em;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.sc-button:hover {
+	opacity:0.7;
+}
+
+
+/* Info Box
+--------------------------------------------------- */
+.sc-infobox {
+	padding: 12px;
+	margin-bottom: 18px;
+}
+
+.sc-infobox.opacity-on {
+	background-image: -moz-linear-gradient(top,  rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.8) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.8)), color-stop(100%,rgba(255,255,255,0.8)));
+	background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
+	background-image: -o-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
+	background-image: -ms-linear-gradient(top,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.08) 100%);
+	background-image: linear-gradient(to bottom,  rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14ffffff', endColorstr='#14ffffff',GradientType=0 );
+}
+
+.sc-infobox.content-white,
+.sc-infobox.content-white h2 {
+	color: #fff;
+}
+	.sc-infobox.content-white .border {
+		border: 1px solid #fff;
+	}
+	.sc-infobox.content-white .sep{
+		background-color:#fff;
+	}
+
+.sc-infobox.content-black {
+	color: #000;
+}
+	.sc-infobox.content-black .border {
+		border: 1px solid #000;
+	}
+	.sc-infobox.content-black .sep{
+		background-color:#000;
+	}
+	
+.sc-infobox .border{
+	padding: 18px 12px;
+}
+
+.sc-infobox .border{
+	text-align:center;
+}
+
+.sc-infobox h2{
+	font-size: 32px !important;
+	line-height: 38px !important;
+	margin:0 !important;
+	padding:0 !important;
+}
+
+.sc-infobox span{
+	display: block;
+	font-size: 18px;
+}
+
+.sc-infobox .sep{
+	height: 1px;
+	padding:0;
+	margin: 18px auto 12px;
+	width:30%;
+}
+
+
+/* Info Box & Buttons Colors
+--------------------------------------------------- */
+.color-black span, .color-black:hover	{ color: #000; }
+.color-white span, .color-white:hover	{ color: #fff; }
+
+.bg-redlight	{ background-color: #d37a7a; }
+.bg-red			{ background-color: #dc4133; }
+.bg-orangelight	{ background-color: #ffa800; }
+.bg-orange		{ background-color: #ff6600; }
+.bg-yellowlight	{ background-color: #ebd590; }
+.bg-yellow		{ background-color: #ffd202; }
+.bg-greenlight	{ background-color: #a5d592; }
+.bg-green		{ background-color: #7cb764; }
+.bg-turquoise	{ background-color: #5ee8bf; }
+.bg-bluelight	{ background-color: #8fc1d1; }
+.bg-blue		{ background-color: #5496ab; }
+.bg-purplelight	{ background-color: #9e7fab; }
+.bg-purple		{ background-color: #572a6a; }
+.bg-brownlight	{ background-color: #d9ba8c; }
+.bg-brown		{ background-color: #d5a661; }
+.bg-gray		{ background-color: #bbb; }
+.bg-darkgray	{ background-color: #555; }
+.bg-black		{ background-color: #000; }
+
+
+
+/* Columns
+--------------------------------------------------- */
+.sc-columns {
+	margin-left: -2%;	
+}
+
+.sc-columns div.col{
+	float: left;
+	margin-left: 2%;
+	margin-bottom: 18px;
+}
+
+.sc-columns div.col img{
+	width: 100%;
+	height: auto;
+}
+
+.sc-columns.half div.col{
+	width: 48%;
+}
+
+.sc-columns.third div.col {
+	width: 31.33%;
+}
+
+.sc-columns.fourth div.col {
+	width: 23%;
+}
+
+.sc-columns.two-thirds-and-third div.col:first-child{
+	width: 64.67%;
+}
+
+.sc-columns.two-thirds-and-third div.col{
+	width: 31.33%;
+}
+
+.sc-columns.third-and-two-thirds div.col:first-child{
+	width: 31.33%;
+}
+
+.sc-columns.third-and-two-thirds div.col{
+	width: 64.67%;
+}
+
+
+/* Columns Media Query
+----------------------------------------------- */
+@media only screen and (max-width: 800px) {
+
+	.sc-columns {
+		margin-left: 0;	
+	}
+
+	.sc-columns div.col {
+		float: none;
+		margin-left: 0;
+	}
+	
+	.sc-columns div.col {
+		width:100% !important;	
+	}
+	
+}
+
+
+
+/* Tabs
+--------------------------------------------------- */
+.sc-tabs {
+	margin-bottom: 18px;
+	border-top: 3px solid #000;
+	border-bottom: 1px solid #ddd;
+}
+
+.sc-tabs .tabs-nav {
+	display: block;
+	margin: 0 !important;
+	padding: 0 !important;
+	border-bottom: 1px solid #ddd;
+}
+
+.sc-tabs .tabs-nav li {
+	display: block;
+	float: left;
+	width: auto;
+	margin: 0 !important;
+	padding: 10px 0 0 !important;
+	outline: none;
+	list-style: none !important;
+}
+
+.sc-tabs .tabs-nav li a {
+	display: block;
+	width: auto;
+	line-height: 40px;
+	margin: 0 0 0 30px;
+	font-size: 1em;
+	text-decoration: none;
+	color: #777;
+	outline:none;
+}
+
+.sc-tabs .tabs-nav li:first-child a {
+	margin-left: 0;
+}
+
+.sc-tabs .tabs-nav li a:hover {
+	color: #222;
+}
+
+.sc-tabs .tabs-nav a.current {
+	background: #fff;
+	height: 45px;
+	position: relative;
+	color: #222;
+	border-bottom: 3px solid #000;
+}
+
+.sc-tabs .tabs-nav a.current:hover {
+	background: #fff;
+}
+
+.sc-tabs .tab-content {
+	padding: 18px 0;
+	background: #fff;
+}
+
+
+/* Vertcal Tabs Layout Media Query
+----------------------------------------------- */
+@media only screen and (min-width: 800px) {
+	
+	.sc-tabs.tabs-vertical .tabs-nav{
+		float: left;
+		width: 30%;
+		border-right: 1px solid #ddd;
+		border-bottom: 0;
+		padding: 40px 50px 50px 0;
+	}
+	
+	.sc-tabs.tabs-vertical .tabs-nav li {
+		float: none;
+		display: block;
+		padding: 0 !important;
+		height: 45px;
+		border-bottom: 1px solid #ddd;
+	}
+	
+	.sc-tabs.tabs-vertical .tabs-nav li a {
+		height: 45px;
+		line-height: 48px;
+		margin: 0;
+	}
+	
+	.sc-tabs.tabs-vertical .panes {
+		float: left;
+		width: 62.6%;
+	}
+	
+	.sc-tabs.tabs-vertical .tab-content {
+		padding: 50px;
+		border-left: 1px solid #ddd;
+		margin-left: -1px;
+	}
+	
+}
+
+
+
+/* Title
+--------------------------------------------------- */
+.sc-title {
+	text-align: center;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	
+}
+
+.sc-title .title {
+	font-size: 50px !important;
+	line-height: 120% !important;
+	background: url('../images/section-header.png') repeat-x 0 50%;
+}
+
+.sc-title .title span {
+	display: inline-block;
+	background: #fff;
+	padding: 0 20px;
+}
+
+.sc-title .sub-title {
+	font-size: 18px;
+	letter-spacing: 0.2em;
+	color: #8c919b;
+}
+
+
+/* Separator
+--------------------------------------------------- */
+.sc-separator {
+	margin: 15px 0 30px;
+}
+
+.sc-separator.type-thin {
+	border-top: 1px solid #8c919b;
+}
+
+.sc-separator.type-thick {
+	border-top: 3px solid #8c919b;
+}
+
+.sc-separator.type-double {
+	height:7px;
+	background: url('../images/section-header.png') repeat-x 0 50%;
+}
+
+.sc-separator.type-space {
+	clear: both;
+	height: 1px;
+	margin:30px 0 50px;
+}
+
+
+
+/* Clear Floats
+--------------------------------------------------- */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+} 
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
