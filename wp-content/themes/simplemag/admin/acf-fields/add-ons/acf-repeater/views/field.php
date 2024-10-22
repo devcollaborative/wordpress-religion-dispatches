@@ -181,7 +181,7 @@ endif;
 		// row number
 		
 		if( $field['row_limit'] > 1 ): ?>
-			<td class="order"><?php echo $i+1; ?></td>
+			<td class="order"><?php echo (int)$i+1; ?></td>
 		<?php endif; ?>
 		
 		<?php
