@@ -73,10 +73,6 @@ if ( ! defined( 'WP_DEBUG' ) ) {
 	define('WP_DEBUG', false);
 }
 
-define('WP_CACHE', true);
-define('DISALLOW_FILE_EDIT', false);
-define('DISALLOW_FILE_MODS', false);
-define('WPLANG', '');
 
 /* That's all, stop editing! Happy Pressing. */
 
