@@ -224,7 +224,7 @@
             <td style="vertical-align:top;">
                 <?php 
                     if ($i === 1) {
-                        echo '<input type="text" id="header_margin" name="header_margin" placeholder="margin-top" value="'.get_option('header_margin').'" /><span>e.g. 40px</span>';
+                        echo '<input type="text" id="header_margin" name="header_margin" placeholder="margin-top" value="'.esc_attr(get_option('header_margin')).'" /><span>e.g. 40px</span>';
                     } else {
                         echo '<b>Only available on Banner #1 as multiple header margin values would override each other.</b>';
                     }
@@ -244,7 +244,7 @@
             <td style="vertical-align:top;">
                 <?php 
                     if ($i === 1) {
-                        echo '<input type="text" id="header_padding" name="header_padding" placeholder="padding-top" value="'.get_option('header_padding').'" /><span>e.g. 40px</span>';
+                        echo '<input type="text" id="header_padding" name="header_padding" placeholder="padding-top" value="'.esc_attr(get_option('header_padding')).'" /><span>e.g. 40px</span>';
                     } else {
                         echo '<b>Only available on Banner #1 as multiple header padding values would override each other.</b>';
                     }
